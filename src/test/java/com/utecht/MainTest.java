@@ -15,14 +15,14 @@ class MainTest{
 	
 	@Test
 	void getScannerTest(){
-		final Scanner sc = Utils.getScanner(new File("src/test/java/input/utils.txt"));
+		final Scanner sc = Utils.getScanner(new File("src/test/resources/input/utils.txt"));
 		assertEquals("1,-2,2,0", sc.nextLine());
 		sc.close();
 	}
 	
 	@Test
 	void getScannerTestFail(){
-		assertEquals(null, Utils.getScanner(new File("src/test/java/input/nothing")));
+		assertEquals(null, Utils.getScanner(new File("src/test/resources/input/nothing")));
 	}
 
 	@Test
