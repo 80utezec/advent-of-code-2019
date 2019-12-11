@@ -5,8 +5,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.File;
 
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 class Day01Test{
+	public static final Logger LOGGER = LoggerFactory.getLogger(Day01Test.class);
 	
 	@Test
 	void findFuelTest(){
@@ -19,7 +22,7 @@ class Day01Test{
 	
 	@Test
 	void part01Test(){
-		final Day01 d = new Day01(new File("src/test/java/input/day01.txt"));
+		final Day01 d = new Day01(new File("src/test/resources/input/day01.txt"));
 		assertEquals(3406342, d.part01());
 	}
 	
@@ -33,7 +36,7 @@ class Day01Test{
 	
 	@Test
 	void part02Test(){
-		final Day01 d = new Day01(new File("src/test/java/input/day01.txt"));
+		final Day01 d = new Day01(new File("src/test/resources/input/day01.txt"));
 		assertEquals(5106629, d.part02());
 	}
 }
