@@ -23,6 +23,9 @@ public class Main{
 //		LOGGER.info("Day 03, part01: {}", day03.part01());
 //		LOGGER.info("Day 03, part02: {}", day03.part02());
 		
+		final Day04 day04 = new Day04(273025, 767253);
+		//LOGGER.info("Day 04, part01: {}", day04.part01());
+		LOGGER.info("Day 04, part02: {}", day04.part02());
 		
 	}
 	
