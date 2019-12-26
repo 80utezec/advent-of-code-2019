@@ -21,7 +21,7 @@ public class Day04{
 		int validPasswords = 0;
 		for(int i = lowerLimit; i < upperLimit; i++) {
 			if(validPassword(i, 1)) {
-				LOGGER.debug("Valid password: {}", i);
+				//LOGGER.debug("Valid password: {}", i);
 				validPasswords++;
 			}
 		}
@@ -32,7 +32,7 @@ public class Day04{
 		int validPasswords = 0;
 		for(int i = lowerLimit; i < upperLimit; i++) {
 			if(validPassword(i, 2)) {
-				LOGGER.debug("Valid password: {}", i);
+				//LOGGER.debug("Valid password: {}", i);
 				validPasswords++;
 			}
 		}
